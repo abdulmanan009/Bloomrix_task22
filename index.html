@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 22 — Advanced JavaScript Analytics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════ -->
+  <header class="app-header">
+    <h1>🚀 Advanced JavaScript Analytics</h1>
+    <p>Task 22 — Execution Contexts · Data Structures · Functional Programming</p>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION TABS
+  ════════════════════════════════════════════ -->
+  <nav class="tab-nav">
+    <button class="nav-btn active" data-tab="dashboard">📊 Dashboard</button>
+    <button class="nav-btn" data-tab="table">📋 Data Table</button>
+    <button class="nav-btn" data-tab="execution">⏱️ Execution Order</button>
+    <button class="nav-btn" data-tab="this">"this" Demo</button>
+    <button class="nav-btn" data-tab="concepts">📚 Concepts</button>
+    <button class="nav-btn" data-tab="perf">⚡ Performance</button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       TAB CONTENTS
+  ════════════════════════════════════════════ -->
+  <main class="app-main">
+
+    <!-- Dashboard -->
+    <div id="tab-dashboard" class="tab-content">
+      <div id="dashboard-area">Loading…</div>
+    </div>
+
+    <!-- Data Table -->
+    <div id="tab-table" class="tab-content hidden">
+      <div id="table-area">Loading…</div>
+    </div>
+
+    <!-- Execution Order -->
+    <div id="tab-execution" class="tab-content hidden">
+      <div id="execution-area">Loading…</div>
+    </div>
+
+    <!-- this Demo -->
+    <div id="tab-this" class="tab-content hidden">
+      <div id="this-area">Loading…</div>
+    </div>
+
+    <!-- Concepts -->
+    <div id="tab-concepts" class="tab-content hidden">
+      <div id="concepts-area">Loading…</div>
+    </div>
+
+    <!-- Performance -->
+    <div id="tab-perf" class="tab-content hidden">
+      <div id="perf-area">Loading…</div>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       Entry point — type="module" so we can use
+       import/export across files
+  ════════════════════════════════════════════ -->
+  <script type="module">
+    import { init } from "./ui.js";
+    init();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+Software Engineering / JavaScript
+22 - Advanced JavaScript Execution, Data Structures and Functional Programming
+Description
+Study the concepts below and practice each one in a separate JavaScript file. Use browser DevTools and the console to observe execution order, memory behavior, and the results of different programming techniques.
+
+· JavaScript execution context: global execution context, function execution context, creation phase, execution phase, lexical environment, and variable environment.
+
+· Call stack: how function calls are added and removed from the stack, stack frames, nested function execution, and stack overflow errors.
+
+· Event loop internals: JavaScript runtime, call stack, task queue, microtask queue, event loop scheduling, and how asynchronous operations are processed.
+
+· Microtasks and macrotasks: Promise callbacks, queueMicrotask(), setTimeout(), setInterval(), task scheduling, and understanding execution order.
+
+· JavaScript runtime behavior: synchronous execution, asynchronous callbacks, browser APIs, rendering opportunities, and the relationship between the browser runtime and the JavaScript engine.
+
+· Advanced this behavior: this in regular functions, arrow functions, callbacks, nested methods, and event handlers. Practice situations where this may lose its original context.
+
+· Advanced data structures: Map, Set, WeakMap, and WeakSet. Understand their differences from ordinary objects and arrays.
+
+· Map: creating key-value collections, set(), get(), has(), delete(), clear(), iteration, and using objects as keys.
+
+· Set: unique values, add(), has(), delete(), clear(), converting arrays to sets, and removing duplicate records.
+
+· WeakMap and WeakSet: weak object references, garbage collection behavior, limitations, and practical use cases.
+
+· Symbol: creating unique identifiers, Symbol.for(), Symbol.keyFor(), well-known symbols, and using Symbol to avoid property name conflicts.
+
+· Iterators and iteration protocols: iterable objects, iterator objects, Symbol.iterator, next(), and implementing custom iteration.
+
+· Generators: function*, yield, yield*, generator execution, lazy evaluation, and using generators to process data step by step.
+
+· Functional programming: pure functions, immutability, avoiding side effects, function composition, currying, partial application, and higher-order functions.
+
+· Advanced functional techniques: memoization, recursion, closures in functional utilities, and creating reusable functions.
+
+· Memory management: references, garbage collection basics, memory leaks, circular references, and common causes of unnecessary memory retention.
+
+· Data processing optimization: choosing appropriate data structures, avoiding repeated searches, reducing unnecessary loops, and understanding the trade-offs between time and memory.
+
+Instructions
+Understand how JavaScript executes code internally, how asynchronous operations are scheduled, and how advanced data structures and functional programming techniques can improve application performance and maintainability.
+
+Assignment Details
+Description
+Build a JavaScript-based data processing and analytics application that manages a large collection of sample records and generates useful reports. The application should demonstrate advanced JavaScript execution concepts, data structures, iterators, generators, and functional programming.
+
+· Create a sample dataset containing at least 100 records representing projects, tasks, users, or transactions. Each record should have an ID, title, category, status, assigned user, priority, date, and numeric value.
+
+· Implement a data processing module that loads the records and performs operations such as searching, grouping, filtering, sorting, and generating summaries.
+
+· Use Map to maintain grouped records, such as tasks grouped by assigned user, projects grouped by status, or transactions grouped by category.
+
+· Use Set to maintain unique categories, users, statuses, and other values. Implement a feature that removes duplicate records based on a selected property.
+
+· Demonstrate WeakMap or WeakSet with an appropriate object-related use case, such as storing temporary metadata associated with record objects.
+
+· Use Symbol to create at least one unique internal property or identifier that avoids accidental property name conflicts.
+
+· Create a custom iterable object that allows records to be processed using for...of. Implement the iterator protocol using Symbol.iterator.
+
+· Create at least one generator function to process records in batches. For example, return 10 records at a time rather than processing the entire dataset at once.
+
+· Implement at least three pure functions for calculations such as total records, average values, completion percentages, or category summaries.
+
+· Implement function composition or currying for at least one reusable data processing operation.
+
+· Implement memoization for an expensive calculation, such as generating a report or calculating statistics for a filtered dataset. Ensure cached results are invalidated or updated when the underlying data changes.
+
+· Demonstrate immutability by creating operations that return updated records or collections without unexpectedly modifying the original data.
+
+· Create an execution-order demonstration page that shows the difference between synchronous code, Promise callbacks, queueMicrotask(), and setTimeout(). Display the execution order rather than only logging it to the console.
+
+· Create an analytics dashboard containing summary cards, category statistics, status distribution, and a data table.
+
+· Add search, filters, sorting, and pagination to the analytics dashboard. Use the appropriate data structures and avoid repeatedly scanning the entire dataset when a more suitable structure would improve performance.
+
+· Compare the performance of at least two approaches for one operation, such as searching records using an array versus a Map. Use performance.now() to measure execution time and explain the limitations of the comparison.
+
+· Handle empty datasets, invalid input, and unexpected data safely.
+
+· Keep data processing functions separate from UI rendering functions. Organize the application into modules and explain the purpose of each module.
+
+· Submit the source code and a short explanation of the data structures, functional programming techniques, iterator implementation, and performance comparison.
